@@ -11,72 +11,107 @@
     <script>
 
 
-          /* You can store values in a vairable with const, Var(outdated),and let.
-          This is called a statement. In Javascript most statements end with a ; (semicolon)
-          The computer reads the line left to right to compile code, depends on the syntax.
-           Const is short for constant value (immutable) Meaning it cannot be changed */
+                /* You can store values in a vairable with const, Var(outdated),and let.
+                This is called a statement. In Javascript most statements end with a ; (semicolon)
+                The computer reads the line left to right to compile code, depends on the syntax.
+                 Const is short for constant value (immutable) Meaning it cannot be changed */
 
-          const Winner = 45;
-          const Pantherslosebuy = 20;
+                const Winner = 45;
+                const Pantherslosebuy = 20;
+                const cost = 3.45;
+                const money = 10;
 
-          /* Use variables related to function or JS action within code (pro-tip)
-          Will help other developers read your code. Use let to re-assign variables
-          You can store 4 types of values in variables; Numbers, Booleans, Strings, Objects */
+                /* Use variables related to function or JS action within code (pro-tip)
+                Will help other developers read your code. Use let to re-assign variables
+                You can store 4 types of values in variables; Numbers, Booleans, Strings, Objects */
 
-          let Thenumber = 15;
-           Thenumber = 20;
-          const JetsWinBuy = Winner;
+                let Thenumber = 15;
+                 Thenumber = 20;
+                const JetsWinBuy = Winner;
 
-          // Booleans are true or false statements.
+                // Booleans are true or false statements.
 
-          const dannyIsLoggined = true;
-          const dannyIsNotLoggedin = false;
+                const dannyIsLoggined = true;
+                const dannyIsNotLoggedin = false;
 
-          /* Variables can be named a-z,$,_ , 0-9(numbers) cannot start with a number!!!!
-          Casing is just the style in which JS or other languages are wrote
-          Javascript environment variables store values that make your program function a certain way
-          Say you want to put something onlineand not on your local machine
-          The example below is usualy how JS environment variables wrote */
+                /* Variables can be named a-z,$,_ , 0-9(numbers) cannot start with a number!!!!
+                Casing is just the style in which JS or other languages are wrote
+                Javascript environment variables store values that make your program function a certain way
+                Say you want to put something onlineand not on your local machine
+                The example below is usualy how JS environment variables wrote */
 
-          const SERVER_KEY_ = 24;
-          let Message_to_Mom = 'Love You!!!';
+                const SERVER_KEY_ = 24;
+                let Message_to_Mom = 'Love You!!!';
 
-          /*Strings are characters put together, there are 3 ways  to define a string.
-          Single and Double qoutes. You can use back ticts to add values to strings and ${Variable} to use others
-          Strings are interchangeable and can be used inside one another */
+                /*Strings are characters put together, there are 3 ways  to define a string.
+                Single and Double qoutes. You can use back ticts to add values to strings and ${Variable} to use others
+                Strings are interchangeable and can be used inside one another */
 
-          const a = 'Hello World';
-         const c = "Hello Alabama";
-         const Message =`Jenny says ${a}, while Jenifer says ${c}`;
+                const a = 'Hello World';
+               const c = "Hello Alabama";
+               const Message =`Jenny says ${a}, while Jenifer says ${c}`;
 
-          /* functions are reusable code!! This is very important to master in JS.
-          Below this fucntion is returning the number 4 using the getNumber promt */
-          function getNumber (){
-            return 4;
-          }
+                /* functions are reusable code!! This is very important to master in JS.
+                Below this fucntion is returning the number 4 using the getNumber promt */
+                function getNumber (){
+                  return 4;
+                }
 
-         /* Use Math object function to ge a random number between 0 and 1 by default.
-            To generate higher number 0 and example 100, multiply the output by 100.
-            If you want to do between 50 and 100. */
-            function getRando(){
-              const myRando = math.random() * 100;
-              return myRando;
+               /* Use Math object function to ge a random number between 0 and 1 by default.
+                  To generate higher number 0 and example 100, multiply the output by 100.
+                  If you want to do between 50 and 100. */
+                  function getRando(){
+                    const myRando = math.random() * 100;
+                    return myRando;
+                  }
+                  /* MyRando  will return a number from bewteen 0-100. (Output) X 100 gives you a number between
+                  0 and 100. If you want to make a random number between 50-100
+                  (Math.random(output) X 50) multiply 50 by output then add 50   50 + 50 = 100 (50-100) */
+              const myRandomnumber = (math.random() * 50) + 50;
+
+                /* You can use a math function called Math.floor to round a number to the nearest integer
+                 The example below 28.9 will round up to 29 */
+                function getAge(28.9){
+                  const MyAge = Math.floor(28.9);
+                  return getAge;
+
+                }
+
+
+              /* if/ else are condtions are usally to define what's true or false.
+              The greater than (>) operator returns true if the left operand is greater than the right operand, and false otherwise. */
+
+              function SupermanIcecream (cost, money) {
+                if(cost === money ) {
+                  return true;
+              }
+             else (cost <= money) {
+                return false;
+              }
             }
-            /* MyRando  will return a number from bewteen 0-100. (Output) X 100 gives you a number between
-            0 and 100. If you want to make a random number between 50-100
-            (Math.random(output) X 50) multiply 50 by output then add 50   50 + 50 = 100 (50-100) */
-        const myRandomnumber = (math.random() * 50) + 50;
+   
+            // The strict equality (===) operator checks whether its two operands are equal.
+            function Catage (5,2){
+              if(5 === 2) {
+                console.log ("He's still young");
+              }
+              else{console.log('Hes getting old');
+         }
+      }
 
-          /* You can use a math function called Math.floor to round a number to the nearest integer 
-           The example below 28.9 will round up to 29 */
-          function getAge(28.9){
-            const MyAge = Math.floor(28.9);
-            return getAge;
-          }
+      /*
+             The greater than or equal (>=) operator returns true if the left operand is
+             greater than or equal to the right operand, and false otherwise */
 
-        /* if/ else are condtions are usally to define what's true or false example.
-       >=/<= These operators are true when both numbers are equal.  */
-       
+      function isEqual (12,4){
+        if(12 >= 4) {
+          console.log ('Not going to work');
+        }
+         else{
+          console.log('In our size');
+         }
+      }
+
     </script>
   </body>
 </html>
