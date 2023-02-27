@@ -76,10 +76,12 @@
                   return getAge;
 
                 }
+            
 
 
-              /* if are condtions are usally to define what's true or false.
-              The greater than (>) operator returns true if the left operand is greater than the right operand, and false otherwise. */
+              /* if (blank,blank) are condtions you set what's true or false.
+              The greater than (>) operator returns true if the left operand is greater than the right operand, and false otherwise. 
+              The strict equality (===) operator checks whether its two operands are equal. */
 
               if (2===2){
                 console.log('Two is two.');
@@ -88,17 +90,18 @@
                 if(cost === money ) {
                   return true;
               }
-             else (cost <= money) {
+             else (cost =< money) {
                 return false;
               }
             }
    
-            // The strict equality (===) operator checks whether its two operands are equal.
             function CatAge (5,2){
               if(5 === 2) {
                 console.log ("He's still young");
+                return false;
               }
-              else{console.log('Hes getting old');
+              else {console.log('Hes getting old');
+              return true;
          }
       }
 
@@ -109,14 +112,16 @@
       function isEqual (12,4){
         if(12 >= 4) {
           console.log ('Not going to work');
+          return true;
         }
          else{
           console.log('In our size');
+          return false;
          }
       }
 
       /* If you want 3 behaviors based on 2 conditions use else if.
-      else if is a combinationof the two words. If two condtions care true, else will run by defualt.
+      else if is a combination of the two words. If two condtions are true, else will run by defualt.
       Else statements will only run if the original condition is not true.
       Example below
       */
