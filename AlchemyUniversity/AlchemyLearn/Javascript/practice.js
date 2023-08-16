@@ -1,12 +1,14 @@
-const a = 12;
-const b = 12;
-if(a<b) {
-  console.log('B wins!!!!')
-}
 
-else if(b>a){
-  console.log('A winss!!!')
+function addBananas (Endofshift){
+  let CollectBananas = Endofshift;
+  while(CollectBananas<=100){
+    bananas +=5;
+  if(CollectBananasbananas<=100){
+break;
+  }
 }
-else(a==b){
-  console.log('They are the same!!!')
+if (CollectBananas === 100){
+  alert('We have enough Bananas')
+}
+  return CollectBananas;
 }
