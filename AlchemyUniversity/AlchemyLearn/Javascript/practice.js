@@ -1,14 +1,10 @@
-
 function addBananas (Endofshift){
-  let CollectBananas = Endofshift;
-  while(CollectBananas<=100){
-    bananas +=5;
-  if(CollectBananasbananas<=100){
-break;
+  let bananas = 25; 
+  for(bananas <= 100; bananas += 5;){
+
+    if(bananas === 100){
+  alert('We reached our goal!!!!')
+    }
   }
-}
-if (CollectBananas === 100){
-  alert('We have enough Bananas')
-}
-  return CollectBananas;
+  return bananas;
 }
