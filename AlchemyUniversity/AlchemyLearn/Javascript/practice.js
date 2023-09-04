@@ -1,10 +1,5 @@
-function addBananas (Endofshift){
-  let bananas = 25; 
-  for(bananas <= 100; bananas += 5;){
-
-    if(bananas === 100){
-  alert('We reached our goal!!!!')
-    }
-  }
-  return bananas;
+let str ='Hello World';
+for(let i = 1; i<=5; i++){
+  str = str + "!"; .length
 }
+console.log(str);
