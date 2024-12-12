@@ -4,7 +4,7 @@ contract Agreement {
   address recipient;
   bool conditionIsmet;
 
-  function payout () external {
+  function payout() external {
     if(conditionIsmet) {
       sendValue(recipient);
     }
